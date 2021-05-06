@@ -31,18 +31,16 @@ function draw() {
   drawSprites();
  
   groundObject.display();
+   basket.display(); 
+   paperObject.display();
 
-  paperObject.display();
-
-  basket.display();
-  
 }
 
 
  function keyPressed()
    {
      if (keyCode === UP_ARROW) { 
-       Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:85,y:-85}); 
+      Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:110,y:-145}); 
      }
   }
 

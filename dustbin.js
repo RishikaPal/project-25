@@ -3,7 +3,7 @@
    constructor(x,y) { 
      this.x=x; this.y=y;
       this.dustbinWidth=200;
-   this.dustbinHeight=100;
+      this.dustbinHeight = 213;
     this.wallThickness=20; 
     this.angle=0;
     this.image = loadImage("dustbingreen.png");
@@ -24,8 +24,7 @@
      translate(posLeft.x, posLeft.y); 
      rectMode(CENTER) 
      angleMode(RADIANS) 
-     fill(255) 
-     stroke(255) 
+      
      rotate(this.angle)
       rect(0,0,this.wallThickness, this.dustbinHeight);
        pop() 
@@ -39,12 +38,13 @@
        rect(0,0,this.wallThickness, this.dustbinHeight);
         pop() 
        push() 
-       translate(posBottom.x, posBottom.y); 
+       translate(posBottom.x, posBottom.y+10); 
+       
        imageMode(CENTER) 
         
        angleMode(RADIANS) 
-       
-      image(this.image,2,0,this.dustbinHeight/0.5,this.dustbinWidth, this.wallThickness); 
+       image(this.image,2,0,this.dustbinHeight/0.5,this.dustbinWidth, this.wallThickness); 
+      
        pop() 
       }
      }
