@@ -43,7 +43,7 @@
        imageMode(CENTER) 
         
        angleMode(RADIANS) 
-       image(this.image,2,0,this.dustbinHeight/0.5,this.dustbinWidth, this.wallThickness); 
+        image(this.image, 0,-this.dustbinHeight/2 , this.dustbinWidth, this.dustbinHeight); 
       
        pop() 
       }
